@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ url_for( 'static', filename='css/style.css')}}">
+<title>
+{% block title %}
+{% endblock %}
+</title>
+</head>
+    <body>
+    <div class="rect_6">
+         <div class="rect_7">
+             <div class="logo-top"><img src="../static/img/Logo.png"></div>
+        <nav class="nav_1">
+        <a href="/main/"> Основная</a>
+        <a href="/clothes/">Одежда</a>
+            <a href="/boots/">Обувь</a>
+            <a href="/jacket/">Куртка</a>
+        </nav>
+             </div>
+        <div>
+        {% block content %}
+        Страница не заполнена
+        {% endblock %}
+        </div>
+         <div class="rect_13">
+            <img class="img_size" scr="../static/img/1.png">
+            <img class="img_size" src="../static/img/6-1.png">
+            <img class="img_size" src="../static/img/3.png">
+            <img class="img_size" src="../static/img/4.png">
+            <img class="img_size" src="../static/img/5.png">
+            <img class="img_size" src="../static/img/6.png">
+
+        </div>
+    </div>
+
+    </body>
+</html>

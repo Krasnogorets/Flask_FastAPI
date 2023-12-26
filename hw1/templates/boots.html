@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<div class="rect_10">
+    <div class="rect_11">
+        <div class="rect_11_1">
+            <p class="p_big">Обувь</p>
+            <p class="text">{{ content }}</p>
+        </div>
+
+    <div class="rect_12">
+        <a href="#">
+            <div class="rect_3">
+                <p class="btn">{{ btn }}</p>
+
+            </div>
+        </a>
+        <a href="#" class="text_1">Watch Video</a>
+    </div>
+</div>
+<div class="rect_2"><img   class="img_size" src="{{ img_center }}"></div>
+</div>
+{% endblock %}
