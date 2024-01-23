@@ -27,7 +27,7 @@ urls = ['https://cloud.yatco.com/ForSale/Vessel/Photo/379295/large_3911755.png',
 def download(url, path_):
     start_time = time.time()
     response = requests.get(url)
-    filename = path_ + url.replace('https://cloud.yatco.com/ForSale/Vessel/Photo/379295/', '').replace('/', '')
+    _, filename = os.path.join(path_, url.rsplit('/', 1)
     with open(filename, "wb") as f:
         f.write(response.content)
         print(f"Downloaded {url} in {time.time() - start_time:.5f}seconds")
